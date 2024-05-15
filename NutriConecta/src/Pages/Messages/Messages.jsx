@@ -1,7 +1,7 @@
 import React from 'react'
 import Content from '../../Components/Content/Content'
 
-const NewPost = () => {
+const Messages = () => {
   return (
     <Content>
     <section className="container">
@@ -9,7 +9,7 @@ const NewPost = () => {
 
       </div>
       <div className="title">
-        <h1>Nova publicação</h1>
+        <h1>Mensagens</h1>
         <h1>jhassdakjh</h1>
       </div>
       <div className="contant-home">
@@ -23,4 +23,4 @@ const NewPost = () => {
   )
 }
 
-export default NewPost
+export default Messages
