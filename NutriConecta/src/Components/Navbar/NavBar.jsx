@@ -1,8 +1,14 @@
 import React from 'react'
+import "./Navbar.css";
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <header className="navbar__Navbar">
+        <h1>NutriConecta</h1>
+        <div className="input">
+            <input type="text" name="search-box" placeholder="Search" />
+        </div>
+    </header>
   )
 }
 
