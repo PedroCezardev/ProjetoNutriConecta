@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Content.css"
 
-const Content = () => {
+const Content = ({ children }) => {
   return (
     <div className="Content">
-        
+        {children}
     </div>
   )
 }
