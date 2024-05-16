@@ -55,6 +55,10 @@
 }
 
 .logout a{
+    text-decoration: none;
+}
+
+.logout a{
     color: rgb(255, 0, 0);
     width: 4rem;
 }
@@ -74,5 +78,11 @@
 
 .logout button:hover{
     background-color: rgb(255, 82, 82);
-    transition: 0.5s
+    transition: 0.5s;
+    color: #fff;
+}
+
+.logout button,a:hover{
+    color:#fff;
+    transition: 0.1s;
 }

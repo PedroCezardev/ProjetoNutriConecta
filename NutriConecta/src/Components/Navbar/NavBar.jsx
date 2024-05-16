@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Navbar.css";
+import style from "./Navbar.module.css";
 
 const NavBar = () => {
   return (
-    <header className="navbar__Navbar">
+    <header className={style.navbar__Navbar}>
         <h1>NutriConecta</h1>
-        <div className="input">
+        <div className={style.input}>
             <input type="text" name="search-box" placeholder="Search" />
         </div>
     </header>

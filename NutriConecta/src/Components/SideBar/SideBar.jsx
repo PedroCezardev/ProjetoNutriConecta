@@ -8,33 +8,32 @@ import ChatIcon from '@mui/icons-material/Chat';
 import ArticleIcon from '@mui/icons-material/Article';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import './SideBar.css';
+import style from "./SideBar.module.css";
+import {  pink } from '@mui/material/colors';
 
 const SideBar = () => {
 
   return (
-    <div className="sidebar">
-      <header className="profile">
+    <div className={style.sidebar}>
+      <header className={style.profile}>
         <div>
           <img src="" alt="" />
           <p>Olá!</p>
           <h3>Minino Ivo</h3>
         </div>
       </header>
-      <section className="Menu">
+      <section className={style.Menu}>
         <h3>Menu</h3>
         <Link to="/Dashboard">
           <DashboardIcon style={{ color: 'black' }} />
           Dashboard
         </Link>
         <Link to="/">
-            <span style={{ color: 'black' }}>
-                <HomeIcon />
-            </span>
+              <HomeIcon sx={{ color: "primary" }} />
           Home
         </Link>
         <Link to="/Disclosures">
-          <ArticleIcon style={{ color: 'success' }} />
+          <ArticleIcon sx={{ color: pink[500] }} />
           Divulgações
         </Link>
         <Link to="/NewPost">
@@ -54,10 +53,12 @@ const SideBar = () => {
           Tutorial
         </Link>
       </section>
-      <div className="logout">
+      <div className={style.logout}>
         <button>
-          <ExitToAppIcon style={{ color: 'success' }} />
-          Sair
+          <Link to="/Logout">
+            <ExitToAppIcon style={{ color: 'primary' }} />
+            Sair
+          </Link>
         </button>
       </div>
     </div>
