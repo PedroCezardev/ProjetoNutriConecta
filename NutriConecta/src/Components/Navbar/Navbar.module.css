@@ -18,11 +18,11 @@
     align-items: center;
     justify-content: end;
     text-align: center;
-    height: 30px;
-    margin-right: 1rem;
+    height: 40px;
+    margin-right: 2rem;
 }
 
-input{
+.input input{
     background-color: #f8f8f8;
     font-size: 1rem;
     display: flex;
@@ -30,5 +30,5 @@ input{
     border-radius: 10px;
     border: none;
     width: 15rem;
-    height: 23px;
+    height: 35px;
 }

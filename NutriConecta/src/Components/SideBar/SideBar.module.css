@@ -1,32 +1,45 @@
+/* estilização da div mãe */
 .sidebar{
-    /* background-color: aqua; */
     height: 500px;
     width: 10rem;
     margin: 15px;
-    padding: 10px;
     border-radius: 30px;
     display: grid;
-    /* background-color: #fff; */
 }
 
-.sidebar h1, h2, h3, p {
+.sidebar h1, h2, h3, p{
     color: black;
 }
 
-.sidebar .profile{
-    height: 3rem;
-    border-radius: 10px;
+/* estilizacao para are de perfil do usuário */
+.profile{
+    height: 7rem;
+    border-radius: 20px;
     background-color: #fff;
-    padding: 15px;
+    padding: 3px 10px;
+    cursor: pointer;
+    box-shadow: 0 2rem 3rem  rgba(114, 120, 173, 0.18);
+    transition: all 0.3s ease;
 }
 
+.profile:hover{
+    box-shadow: none;
+}
+
+.profile img{
+    height: 3.5rem;
+
+}
+
+/* estilizacao para o menu de opções */
 .Menu{
     margin: 10px;
     margin-top: 1rem;
 }
 
-.Menu h3{
-    margin-bottom: 0.5rem;
+.icon {
+    color: black;
+    font-size: 25px; /* Ajuste o tamanho conforme necessário */
 }
 
 .Menu a{
@@ -47,42 +60,45 @@
     
 }
 
+/* estilizacao para a area de logout */
 .logout{
     margin: 10px;
-    margin-top: 1.8rem;
-    height: 5rem;
+    height: 1rem;
     width: 6px;
 }
 
 .logout a{
     text-decoration: none;
-}
-
-.logout a{
     color: rgb(255, 0, 0);
     width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 5rem;
 }
 
 .logout button{
     height: 2.3rem;
-    width: 6rem;
+    width: 7rem;
     font-size: 1rem;
-    color: #000;
     background-color: #e4e4e4;
     border: solid 3px #fff;
     border-radius: 7px;
     display: flex;
     align-items: center;
-    gap: 7px;
+    justify-content: space-around;
+    box-shadow: 0 2rem 3rem  rgba(74, 78, 117, 0.18);
+    transition: all 0.3s ease;
 }
 
 .logout button:hover{
     background-color: rgb(255, 82, 82);
     transition: 0.5s;
     color: #fff;
+    box-shadow: none;
 }
 
-.logout button,a:hover{
+.logout button, a:hover{
     color:#fff;
     transition: 0.1s;
 }
